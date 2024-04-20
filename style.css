@@ -1,0 +1,230 @@
+/*
+Theme Name: ScrapUK Leads Theme
+Theme URI: http://example.com/my-simple-theme
+Author: Your Name
+Author URI: https://darrenk.uk
+Description: A simple WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: minimal, simple
+Text Domain: scrap-uk-leads
+*/
+*/
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #333;
+}
+/* Ensure the body and html occupy full height */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Set up flex container on body to use the full viewport height */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use viewport height rather than percentage to cover full height */
+}
+
+/* Content area should flex to fill the space */
+main {
+    flex: 1;
+    margin-top: 50px;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center; /* Center the text inside the footer */
+    background-color: #f8f8f8;
+}
+
+#content {
+    padding: 20px;
+    box-sizing: border-box;
+    lex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #content {
+        padding: 10px;
+    }
+}
+/* Main navigation styling */
+header nav {
+    text-align: right;
+    width: 100%;
+}
+/* Header and logo styling */
+header {
+    padding: 20px 30px; /* Adds padding around the header for better spacing */
+    box-sizing: border-box;
+}
+
+.logo img {
+    max-width: 250px; /* Sets maximum width for the logo */
+    height: auto; /* Maintains aspect ratio of the logo */
+}
+
+/* Main navigation styling */
+nav {
+    max-width: 100%; /* Ensures the nav doesn't exceed the width of the header */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns menu items to the right */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #0073aa;
+}
+nav {
+    margin-top: -30px;
+}
+/* Responsive adjustments for the main menu */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks the menu items vertically on mobile */
+        align-items: center; /* Centers the items */
+        max-width: none; /* Allows full width on mobile */
+    }
+
+    nav ul li {
+        margin-left: 0; /* Removes left margin on mobile */
+        margin-bottom: 10px; /* Adds bottom margin for spacing */
+    }
+}
+
+/* WooCommerce account menu styling */
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block; /* Ensures items are listed vertically */
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li:last-child {
+    border-bottom: none;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    width: 100%; /* Ensures the link uses the full width for easier clicking */
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation a:hover,
+.woocommerce-account .woocommerce-MyAccount-navigation .is-active a {
+    background-color: #e8e8e8;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    float: left;
+    width: 25%!important;
+}
+.subscription-details,
+.cart-subtotal, .recurring-totals,
+.shipping, .order-total {
+    display: none !important;
+}
+.woocommerce-shipping-fields {
+    display: none !important;
+}
+
+.wcs-recurring-totals-panel {
+    display: none !important;
+}
+span.price.wc-block-components-product-price {
+    display: none !important;
+}
+th.subscription-next-payment.order-date.woocommerce-orders-table__header.woocommerce-orders-table__header-order-date.woocommerce-orders-table__header-subscription-next-payment {
+    display: none;
+}
+
+td.subscription-next-payment.order-date.woocommerce-orders-table__cell.woocommerce-orders-table__cell-subscription-next-payment.woocommerce-orders-table__cell-order-date {
+    display: none;
+}
+input {
+    height: 41px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+/* Responsive adjustments for main menu */
+@media (max-width: 768px) {
+    .logo {
+    text-align: center;
+}
+    header nav {
+    margin-top: 20px;
+    }
+    .woocommerce-account .woocommerce-MyAccount-navigation li {
+    /* padding: 10px; */
+    /* border-bottom: 1px solid #eee; */
+    margin-left: -16px;
+}
+        
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    border: none;
+    padding: 15px;
+    background-color: #fff;
+    width: 100%!important;
+}
+
+    nav ul {
+        flex-direction: column; /* Stacks the menu items vertically on mobile */
+        align-items: center; /* Centers items */
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
+.postcode-area-checkbox {
+    float: revert-layer;
+    height: auto!important;
+}
+input.select-all {
+    height: auto;
+}
